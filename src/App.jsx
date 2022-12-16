@@ -1,23 +1,24 @@
 import style from './style';
 import { Navbar, Hero, Footer } from './components';
+import Form from './components/Form';
 
 function App() {
   return (
-    <div className="bg-primary w-full overflow-hidden">
-      <div className={`${style.paddingX} ${style.flexCenter}`}>
-        <div className={`${style.boxWidth}`}>
-          <Navbar/>
-        </div>
+    <div className="bg-primary">
+      <div className={`bg-primary`}>
+          <Navbar />
       </div>
 
       <div className={`bg-primary`}>
-          <Hero/>
+        <Hero />
       </div>
 
-      <div className={`bg-white ${style.paddingX} ${style.flexStart}`}>
-        <div className={`${style.boxWidth}`}>
-          <Footer/>
-        </div>
+      <div className={`bg-white`}>
+        <Form/>
+      </div>
+
+      <div className={`bg-white`}>
+        <Footer />
       </div>
     </div>
   )

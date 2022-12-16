@@ -3,7 +3,7 @@ import car from '../assets/img_car.png'
 
 const Hero = () => {
   return (
-    <div className=" flex justify-between items-center pt-20">
+    <div className="lg:flex justify-between items-center pt-20">
       <div className='w-6/12 '>
         <div className="xl:ml-52 lg:ml-16 md:ml-5 xl:mr-20 mr-0">
           <h2 className="xl:text-4xl md:text-2xl font-poppins font-bold">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
