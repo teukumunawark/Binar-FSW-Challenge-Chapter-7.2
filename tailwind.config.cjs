@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}"],
+    "./src/**/*.{js,jsx,ts,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
+  ],
   mode: "jit",
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         primary: "#F1F3FF",
@@ -22,5 +27,8 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('daisyui'),
+    require('flowbite/plugin'),
+  ],
 }
