@@ -1,25 +1,22 @@
 import React from 'react'
-import car from '../assets/img_car.png'
-import Form from '../components/Form';
+import Image from '../assets/img_car.png'
+import Search from '../components/Form';
 
 
 const Hero = () => {
   return (
-    <div className="h-100%">
-      <div className="lg:flex justify-between items-center pt-20">
-        <div className='w-6/12 '>
-          <div className="xl:ml-52 lg:ml-16 md:ml-5 xl:mr-20 mr-0">
-            <h2 className="xl:text-4xl md:text-2xl font-poppins font-bold text-black">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
-            <p className="pt-4 font-poppins text-slate-800">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-          </div>
+    <section className='h-full max-h-[500px] mb-8 xl:mb-24'>
+      <div className='flex flex-col sm:flex-row bg-primary lg:pt-20 pt-5 justify-between'>
+        <div className='lg:ml-8 xl:ml-[200px] flex flex-col items-center lg:text-left justify-center space-y-5 flex-1 px-4 lg:px-0 max-w-xl'>
+          <h1 className='font-poppins font-bold text-3xl md:text-4xl'>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+          <p className='font-poppins'>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
         </div>
-        <div className="w-5/12">
-          <img src={car} alt="car" />
+        <div className='pt-10'>
+          <img src={Image} alt="" className='xl:max-w-3xl md:max-w-xl sm:max-w-md' />
         </div>
       </div>
-      {/* <Form /> */}
-
-    </div>
+      <Search />
+    </section>
 
   )
 }

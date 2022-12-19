@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -7,7 +6,10 @@ module.exports = {
   mode: "jit",
   theme: {
     container: {
-      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        lg: '0',
+      },
     },
     extend: {
       colors: {
@@ -28,7 +30,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('daisyui'),
     require('flowbite/plugin'),
   ],
 }

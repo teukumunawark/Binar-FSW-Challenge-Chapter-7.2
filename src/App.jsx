@@ -1,14 +1,19 @@
-import style from './style';
-import { Navbar, Hero, Footer } from './components';
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
+
+import { Routes, Route } from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <div className="bg-primary">
-      <Navbar />
-      <Hero />
-      <div className={`bg-white`}>
-        <Footer />
-      </div>
+    <div className="mx-auto bg-white">
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+      <Footer />
     </div>
   )
 }
