@@ -16,7 +16,7 @@ import NavMobile from "./NavMobile"
 const Header = () => {
   const [navMobile, setNavMobile] = useState(false);
   return (
-    <header className='py-6 border-b bg-primary'>
+    <header className='py-6 border-b bg-primary fixed w-full'>
       <div className='container mx-auto flex justify-between items-center relative max-w-7xl'>
         {/* Logo */}
         <img src={Logo} alt="Logo" />
@@ -37,7 +37,8 @@ const Header = () => {
 
           {/* buttons */}
           <Link 
-          className='hover:bg-green-500 bg-[#5CB85F] text-white rounded-sm px-7 py-2.5 font-poppins text-sm transition'
+          className=
+          'hover:bg-green-500 bg-[#5CB85F] text-white rounded-sm px-7 py-2.5 font-poppins text-sm transition'
           to='/' 
           >Register</Link>
 
