@@ -13,7 +13,7 @@ const Form = () => {
       <DateDropdown />
       <TimeDropdown />
       <AmountForm />
-      <div className='items-end flex'>
+      <div className='items-end flex pt-5 lg:pt-0'>
       <Botton href={'/'} title={'Cari Mobil'}/>
       </div>
     </div>
