@@ -16,14 +16,14 @@ import NavMobile from "./NavMobile"
 const Header = () => {
   const [navMobile, setNavMobile] = useState(false);
   return (
-    <header className='py-6 border-b bg-primary fixed w-full'>
+    <header className='py-6 border-b bg-primary fixed w-full z-50'>
       <div className='container mx-auto flex justify-between items-center relative max-w-7xl'>
         {/* Logo */}
         <img src={Logo} alt="Logo" />
 
         {/* Nav Items */}
         <div className='flex items-center gap-10'>
-          <div className='hidden lg:flex'>
+          <div className='hidden sm:flex'>
             <Nav />
           </div>
 
@@ -45,7 +45,7 @@ const Header = () => {
           {/* nav trigger btn / only shows on mobile screens */}
           <div
             onClick={() => setNavMobile(!navMobile)}
-            className='text-2xl text-primary cursor-pointer lg:hidden'
+            className='text-2xl text-primary cursor-pointer sm:hidden'
           >
             <FaBars className='text-slate-700'/>
           </div>

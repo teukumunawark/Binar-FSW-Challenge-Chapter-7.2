@@ -9,12 +9,12 @@ const Card = () => {
 
   return (
     <div>
-      <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div className="max-w-md bg-white border border-gray-200 rounded-2xl shadow-sm dark:bg-gray-800 dark:border-gray-700 p-5">
         <a href="#">
-          <img className="rounded-t-lg" src={img} alt="" />
+          <img className="rounded-t-xl max-h-[300px] min-h-[300px] w-full bg-cover" src={img} alt="" />
         </a>
-        <div className="p-5 space-y-2">
-          <p className='font-poppins font-medium'>Nama/Tipe Mobil</p>
+        <div className="pt-5 space-y-2">
+          <p className='font-poppins font-medium'>Nama / Tipe Mobil</p>
           <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900">Rp 430.000 / hari</h5>
           <p className="mb-3 font-normal text-gray-700 font-poppins text-[14px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
