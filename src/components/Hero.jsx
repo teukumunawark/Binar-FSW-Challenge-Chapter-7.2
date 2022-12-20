@@ -5,7 +5,7 @@ import Search from '../components/Form';
 
 const Hero = () => {
   return (
-    <section className='h-full max-h-[500px] mb-8 xl:mb-24'>
+    <section className='h-full max-h-full mb-8'>
       <div className='flex flex-col sm:flex-row bg-primary lg:pt-28 pt-36 justify-between'>
         <div className='lg:ml-20 xl:ml-72 flex flex-col items-center lg:text-left justify-center space-y-5 flex-1 px-4 lg:px-0 max-w-xl'>
           <h1 className='font-poppins font-bold text-3xl md:text-4xl'>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
