@@ -8,7 +8,7 @@ import Botton from '../components/Botton'
 
 const Form = () => {
   return (
-    <div className='px-10 py-8 max-w-7xl rounded-xl mx-auto flex flex-col lg:flex-row justify-between relative lg:-top-16 bg-white lg:shadow-md'>
+    <div className='px-10 py-8 max-w-7xl rounded-xl mx-auto flex flex-col lg:flex-row justify-between relative lg:-top-16 bg-white lg:shadow-sm'>
       <TipeDropdown />
       <DateDropdown />
       <TimeDropdown />
