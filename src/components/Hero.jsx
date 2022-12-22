@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from '../assets/img_car.png'
-import Search from '../components/Form';
 
 
 const Hero = () => {
@@ -15,9 +14,7 @@ const Hero = () => {
           <img src={Image} alt="" className='xl:max-w-3xl md:max-w-xl sm:max-w-md' />
         </div>
       </div>
-      <Search />
     </section>
-
   )
 }
 
