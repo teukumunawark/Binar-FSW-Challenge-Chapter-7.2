@@ -19,6 +19,8 @@ const Home = () => {
     dispatch(fetchData());
   }, []);
 
+  console.log(data);
+
   return (
     <section >
       <Hero />
