@@ -10,20 +10,22 @@ import Botton from '../components/Botton';
 import {
   fetchData,
   filterByCapacity,
+  filterByDriver,
 } from "../slices/carsSlice";
 
 const Form = () => {
 
   const dispatch = useDispatch();
   const [capacity, setCapacity] = useState(0);
+  const [driver, setDriver] = useState("");
 
   const handleFilter = (e) => {
     e.preventDefault();
 
     dispatch(fetchData()).then(() => {
-      // if (driver == "true") dispatch(filterByDriver(true));
-
-      // if (driver == "false") dispatch(filterByDriver(false));
+      if (driver == "true") dispatch(filterByDriver(true));
+      
+      if (driver == "false") dispatch(filterByDriver(false));
 
       // if (date && time)
       //   dispatch(filterByDateAndTime(`${date}T${time}:00.000Z`));
@@ -35,7 +37,7 @@ const Form = () => {
   return (
     <form onSubmit={handleFilter}>
       <div className='px-10 py-8 max-w-7xl rounded-xl mx-auto flex flex-col lg:flex-row justify-between relative lg:-top-24 bg-white lg:shadow-sm'>
-        <TipeDropdown />
+        <TipeDropdown onChange={(e) => setDriver(e.target.value)} />
         <DateDropdown />
         <TimeDropdown />
         <AmountForm onChange={(e) => setCapacity(e.target.value)} />
